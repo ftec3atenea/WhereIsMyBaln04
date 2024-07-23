@@ -22,12 +22,8 @@
         android:id="@+id/titulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="serif"
         android:text="¿Dónde está mi balneario?"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="48sp"
-        android:textStyle="bold|italic"
+        style="@style/sty_title"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -58,8 +54,13 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="161dp"
+        android:text="¡Iniciemos!"
+        style="@style/sty_button"
+        app:cornerRadius="5dp"
+        app:strokeColor="@color/black"
+        app:strokeWidth="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="383dp" />
 
     <TextView
