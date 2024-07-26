@@ -8,7 +8,7 @@
     tools:context=".MainActivity">
 
     <ImageView
-        android:id="@+id/fondo1"
+        android:id="@+id/fondo11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:scaleType="centerCrop"
@@ -20,38 +20,38 @@
 
     <TextView
         android:id="@+id/titulo1"
-        android:layout_width="wrap_content"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:text="¿Dónde está mi balneario?"
         style="@style/sty_title"
-        android:layout_marginTop="50dp"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/input_user11"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/input_user1"
+        android:id="@+id/input_user11"
         style="@style/sty_input"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="Escriba su usuario"
         android:inputType="text"
-        android:layout_marginTop="50dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/titulo1" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/input_pass11"/>
 
     <EditText
-        android:id="@+id/input_pass1"
+        android:id="@+id/input_pass11"
         style="@style/sty_input"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="Escriba su pass"
         android:inputType="textPassword"
-        android:layout_marginTop="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/input_user1" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_user11" />
 
     <Button
         android:id="@+id/btn_login"
@@ -62,35 +62,35 @@
         app:cornerRadius="5dp"
         app:strokeColor="@color/black"
         app:strokeWidth="2dp"
-        android:layout_marginTop="50dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/input_pass1"/>
+        app:layout_constraintStart_toEndOf="@id/input_user11"
+        app:layout_constraintBottom_toTopOf="@id/forgot11"
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <TextView
-        android:id="@+id/forgot1"
+        android:id="@+id/forgot11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="¿Has olvidado tu contraseña?"
         style="@style/sty_aux"
-        android:layout_marginTop="50dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@id/input_user11"
+        app:layout_constraintBottom_toTopOf="@id/ntc11"
         app:layout_constraintTop_toBottomOf="@+id/btn_login" />
 
     <TextView
-        android:id="@+id/ntc1"
+        android:id="@+id/ntc11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="¿No tienes cuenta?"
         style="@style/sty_aux"
-        android:layout_marginTop="50dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/forgot1" />
+        app:layout_constraintStart_toEndOf="@id/input_pass11"
+        app:layout_constraintBottom_toTopOf="@id/tdr11"
+        app:layout_constraintTop_toBottomOf="@+id/forgot11" />
 
     <TextView
-        android:id="@+id/tdr1"
+        android:id="@+id/tdr11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Todos los derechos reservados GR04"
