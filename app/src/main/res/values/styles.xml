@@ -13,11 +13,12 @@
         <item name="android:textAlignment">center</item>
         <item name="android:textStyle">italic</item>
         <item name="android:backgroundTint">@color/white</item>
+        <item name="android:layout_marginTop">10dp</item>
     </style>
 
     <style name="sty_button">
         <item name="android:backgroundTint">@color/white</item>
-        <item name="android:textColor">#3D1082</item>
+        <item name="android:textColor">@color/black</item>
     </style>
 
     <style name="sty_text">

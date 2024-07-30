@@ -6,6 +6,7 @@ import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -22,7 +23,13 @@ public class SplashActivity extends AppCompatActivity {
         setContentView(R.layout.activity_splash);
 
         //Vamos a unir la variable del mundo visual con la variable del mundo lógico
-        ImageView splash = findViewById(R.id.splash1);
+        ImageView splash = findViewById(R.id.fondo0);
+        TextView titulo0 = findViewById(R.id.titulo0);
+
+        //Vamos a crear la animación
+        Animation anim_out = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.rotate_clockwise);
+        //Vamos a ejecutar la animación
+        titulo0.startAnimation(anim_out);
 
         //Creamos programaticamente la animación
         Animation fadeIn = new AlphaAnimation(0,1);

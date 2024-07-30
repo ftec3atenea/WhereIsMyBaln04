@@ -19,23 +19,25 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //Aquí vamos a enlazar el mundo visual con el mundo lógico
-        TextView tituloL = findViewById(R.id.titulo1);
-        Button btn_login = findViewById(R.id.btn_login);
+        Button btn_login1 = findViewById(R.id.btn_login1);
+        Button btn_signup1 = findViewById(R.id.btn_singup1);
 
-        //Vamos a crear la animación
-        Animation anim_out = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.rotate_clockwise);
+        //Ponemos a escuchar al botón de login
+        btn_login1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent irALogIn = new Intent(MainActivity.this, LogIn.class);
+                startActivity(irALogIn);
+            }
+        });
 
-        //Vamos a ejecutar la animación
-        tituloL.startAnimation(anim_out);
-
-        //Ponemos a escuchar al boyón
-        btn_login.setOnClickListener(new View.OnClickListener() {
+        //Ponemos a escuchar al botón de signup
+        btn_signup1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent irASignUp = new Intent(MainActivity.this, SignUp.class);
                 startActivity(irASignUp);
             }
         });
-
     }
 }

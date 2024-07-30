@@ -8,20 +8,14 @@
     tools:context=".SignUp">
 
     <ImageView
-        android:id="@+id/fondo2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/fondo3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/fondeu" />
 
     <TextView
-        android:id="@+id/titulo2"
+        android:id="@+id/titulo3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="¿Dónde está mi balneario?"
@@ -31,97 +25,83 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/input_user2"
-        style="@style/sty_input"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="Elija su usuario"
-        android:inputType="text"
-        android:layout_marginTop="30dp"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/titulo3"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/titulo2" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="vertical">
 
-    <EditText
-        android:id="@+id/input_name2"
-        style="@style/sty_input"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="Escriba su nombre"
-        android:inputType="text"
-        android:layout_marginTop="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/input_user2" />
+        <EditText
+            android:id="@+id/input_user3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Elija su usuario"
+            style="@style/sty_input"
+            android:inputType="text" />
 
-    <EditText
-        android:id="@+id/input_email2"
-        style="@style/sty_input"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="Escriba su email"
-        android:layout_marginTop="20dp"
-        android:inputType="textEmailAddress"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/input_name2" />
+        <EditText
+            android:id="@+id/input_name3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Escriba su nombre"
+            style="@style/sty_input"
+            android:inputType="text" />
 
-    <EditText
-        android:id="@+id/input_pass2"
-        style="@style/sty_input"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="Elija su pass"
-        android:inputType="textPassword"
-        android:layout_marginTop="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/input_email2" />
+        <EditText
+            android:id="@+id/input_email3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Escriba su email"
+            style="@style/sty_input"
+            android:inputType="textEmailAddress" />
 
-    <EditText
-        android:id="@+id/confirm_pass2"
-        style="@style/sty_input"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="Confirme su pass"
-        android:inputType="textPassword"
-        android:layout_marginTop="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/input_pass2" />
+        <EditText
+            android:id="@+id/input_pass3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Elija su pass"
+            style="@style/sty_input"
+            android:inputType="textPassword" />
 
-    <Button
-        android:id="@+id/btn_signup"
-        style="@style/sty_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="¡Únete!"
-        app:cornerRadius="5dp"
-        android:layout_marginTop="30dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/confirm_pass2"
-        app:strokeColor="@color/black"
-        app:strokeWidth="2dp" />
+        <EditText
+            android:id="@+id/confirm_pass3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Confirme su pass"
+            style="@style/sty_input"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/btn_signup3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            style="@style/sty_button"
+            app:cornerRadius="5dp"
+            app:strokeColor="@color/black"
+            app:strokeWidth="2dp"
+            android:text="¡Únete!" />
+
+        <TextView
+            android:id="@+id/ytc3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            style="@style/sty_aux"
+            android:text="¿Ya tienes cuenta?" />
+
+    </LinearLayout>
 
     <TextView
-        android:id="@+id/ytc2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="¿Ya tienes cuenta?"
-        android:layout_marginTop="30dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_signup" />
-
-    <TextView
-        android:id="@+id/tdr2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Todos los derechos reservados GR04"
         android:layout_margin="10dp"
+        style="@style/sty_aux"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        android:text="Todos los derechos reservados GR04" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
