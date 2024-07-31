@@ -74,11 +74,16 @@
             style="@style/sty_input"
             android:inputType="textPassword" />
 
+        <CheckBox
+            android:id="@+id/cb3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Acepto TyC" />
+
         <Button
             android:id="@+id/btn_signup3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
             style="@style/sty_button"
             app:cornerRadius="5dp"
             app:strokeColor="@color/black"
