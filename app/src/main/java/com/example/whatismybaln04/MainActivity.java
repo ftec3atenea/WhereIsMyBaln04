@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent irALogIn = new Intent(MainActivity.this, LogIn.class);
                 startActivity(irALogIn);
+
                 //vamos a generar un toast para notificar al usuario
                 Toast.makeText(MainActivity.this, "¡Ahora si viene lo chido!", Toast.LENGTH_SHORT).show();
             }
@@ -41,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent irASignUp = new Intent(MainActivity.this, SignUp.class);
                 startActivity(irASignUp);
+
                 //vamos a generar un toast para notificar al usuario
                 Toast.makeText(MainActivity.this, "¡A jugar!", Toast.LENGTH_SHORT).show();
             }

@@ -27,7 +27,7 @@ public class SplashActivity extends AppCompatActivity {
         TextView titulo0 = findViewById(R.id.titulo0);
 
         //Vamos a crear la animación
-        Animation anim_out = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.rotate_clockwise);
+        Animation anim_out = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.set_in_out);
         //Vamos a ejecutar la animación
         titulo0.startAnimation(anim_out);
 
@@ -45,6 +45,6 @@ public class SplashActivity extends AppCompatActivity {
                 startActivity(intent);
                 finish();
             }
-        }, 3000);
+        }, 5000);
     }
 }

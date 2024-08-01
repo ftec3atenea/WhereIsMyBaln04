@@ -20,15 +20,11 @@
 
     <TextView
         android:id="@+id/titulo0"
+        style="@style/sty_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="serif"
         android:rotation="-45"
         android:text="¿Dónde está mi balneario?"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="48sp"
-        android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
